@@ -6,7 +6,6 @@ Template Name: О компании
 
 <!-- html код шаблона -->
 <?php get_header()?>
-<h2><?php the_title()?></h2>
 <div class="row ukrbot-about">
 	<div class="col-2"></div>
 	<div class="col-8">
