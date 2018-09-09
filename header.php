@@ -160,6 +160,7 @@
 'hide_empty'         => 0,
 'use_desc_for_title' => 1,
 'child_of'           => 0,
+'parent'             => 0,
 'feed'               => '',
 'feed_type'          => '',
 'feed_image'         => '',
@@ -208,6 +209,6 @@ $count = count($product_categories);
 
         </ul>
 
-
+        <?php wp_reset_postdata()?>
     </div>
 </div>
