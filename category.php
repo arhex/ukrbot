@@ -98,28 +98,20 @@ $posts = get_posts( array(
 	'post_type'   => 'post',
 	'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
 ) );
-
-
 ?>
 <div class="row justify-content-lg-center" >
-
-
 <?php
 foreach( $posts as $post ){
 		setup_postdata($post);
-
 	// формат вывода the_title() ...
 		?>
-
 				<div class="card" style="width: 18rem; margin-left: 5px; margin-right: 5px">
-
 					<?php  the_post_thumbnail(
 						array(200, 260),
 						array ('style' =>"padding: 10px 80px 5px 80px",
 						       'class' => "card-img-top",)
 					) ?>
 					<div class="card-body">
-
 						<p class="card-text"><a href="<?php the_permalink() ?>"> <?php the_title()?> <?php the_excerpt()?> </a></p>
 					</div>
 					<div class="card-footer ">
@@ -127,7 +119,6 @@ foreach( $posts as $post ){
 							<p style="color: red; font-weight: bold;"><?php the_field('object_price') ?>€</p><a href="#"><img  src="./img/cart-icon.jpg" alt=""></a></div>
 					</div>
 				</div>
-
 		<?php
 	}
 
