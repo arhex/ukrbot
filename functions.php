@@ -249,6 +249,7 @@ function ukrbot_styles (){
     wp_enqueue_style('style', get_template_directory_uri().'/style.css');
 }
 add_theme_support('custom-logo');
+add_theme_support( 'post-thumbnails', array( 'post' ) );
 
 // Include custom navwalker
 require_once('bs4navwalker.php');
